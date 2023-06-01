@@ -35,20 +35,6 @@ let myCheckbox = document.querySelector(".switch input"),
 
   range.addEventListener ("input", updatePrice);
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
    //update price 
 
    function updatePrice(){
