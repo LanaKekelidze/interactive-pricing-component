@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" sizes="32x32" type="image/png" href="/images/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;1,100&family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <title>interactive-pricing</title>
+    <link rel="stylesheet" href="style.css"> </link>
+</head>
+<body>
+<main class="container">
+    <header>
+        <h1>Simple, traffic-based pricing</h1>
+        <p> sign-up for our 30-day trai, No credit card required</p>
+
+    </header>
+    <aside>
+
+        <!-- price bar monthly or yearly -->
+        <div class="tarrif">
+            <div class="page-views"><span>100K</span> pageviews
+            </div>
+            <div class="price">
+                <span> $ <span class="priecefix"> 16</span>.00</span>
+                <span class="month">/month</span>
+            </div>
+        </div>
+
+        <!-- progress bar -->
+        <div class="progress">
+            <div class="progress-bar">
+                <input type="range" min="1" max="5" step="1" value="3" class="myrange">
+            </div>
+            <!-- switch between monthly and yearly price -->
+            <div class="monthly">
+                <span> Monthly Billing</span>
+                <label class="switch">
+                    <input type="checkbox" >
+                    <span class="slider"></span>
+                </label>
+                <span> yearly Billing</span>
+                <span class="discount">25% discount</span>
+            </div>
+        </div>
+        <hr>
+
+        <!-- features -->
+        <div class="start">
+            <ul>
+                <li>unlimited website</li>
+                <li>100% data ownership</li>
+                <li>email reports</li>
+            </ul>
+            <button> Start my trail</button>
+        </div>
+    </aside>
+</main>
+
+    <link rel="stylesheet" href="script.js"> </link>
+</body>
+</html>
