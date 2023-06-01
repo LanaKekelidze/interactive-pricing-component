@@ -6,14 +6,14 @@ let switcher = document.querySelector(".switch");
 let range = document.querySelector(".myrange");
 
 // create price on switch
-switcher.onclick = function() {
-  if (myCheckbox.checked == true) {
-    let priceInt = parseInt(price.textContent);
-    price.textContent = `${(priceInt - (priceInt * 0.25)) * 12}`;
-    duration.textContent = '/year';
-  } else {
-    duration.textContent = '/month';
-  }
+switcher.onclick = function () {
+    if (myCheckbox.checked == true) {
+        let priceInt = parseInt(price.textContent);
+        price.textContent = `${(priceInt - priceInt * 0.25) * 12}`;
+        duration.textContent = "/year";
+    } else {
+        duration.textContent = "/month";
+    }
 };
 
 // add selector to page-view
@@ -24,48 +24,48 @@ range.addEventListener("input", updatePrice);
 
 // update price
 function updatePrice() {
-  if (range.value == 1) {
-    if (myCheckbox.checked == true) {
-      price.textContent = `${(8 - (8 * 0.25)) * 12}`;
-    } else {
-      price.textContent = 8;
+    if (range.value == 1) {
+        if (myCheckbox.checked == true) {
+            price.textContent = `${(8 - 8 * 0.25) * 12}`;
+        } else {
+            price.textContent = 8;
+        }
+        pageViews.textContent = "10k";
     }
-    pageViews.textContent = "10k";
-  }
 
-  if (range.value == 2) {
-    if (myCheckbox.checked == true) {
-      price.textContent = 108;
-    } else {
-      price.textContent = 12;
+    if (range.value == 2) {
+        if (myCheckbox.checked == true) {
+            price.textContent = 108;
+        } else {
+            price.textContent = 12;
+        }
+        pageViews.textContent = "50k";
     }
-    pageViews.textContent = "50k";
-  }
 
-  if (range.value == 3) {
-    if (myCheckbox.checked == true) {
-      price.textContent = 144;
-    } else {
-      price.textContent = 16;
+    if (range.value == 3) {
+        if (myCheckbox.checked == true) {
+            price.textContent = 144;
+        } else {
+            price.textContent = 16;
+        }
+        pageViews.textContent = "100k";
     }
-    pageViews.textContent = "100k";
-  }
 
-  if (range.value == 4) {
-    if (myCheckbox.checked == true) {
-      price.textContent = 216;
-    } else {
-      price.textContent = 24;
+    if (range.value == 4) {
+        if (myCheckbox.checked == true) {
+            price.textContent = 216;
+        } else {
+            price.textContent = 24;
+        }
+        pageViews.textContent = "500k";
     }
-    pageViews.textContent = "500k";
-  }
 
-  if (range.value == 5) {
-    if (myCheckbox.checked == true) {
-      price.textContent = 324;
-    } else {
-      price.textContent = 36;
+    if (range.value == 5) {
+        if (myCheckbox.checked == true) {
+            price.textContent = 324;
+        } else {
+            price.textContent = 36;
+        }
+        pageViews.textContent = "1M";
     }
-    pageViews.textContent = "1M";
-  }
 }
