@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: "manrope", sans-serif;
     display: flex;
     justify-content: center;
     background-image: url(images/bg-pattern.svg);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;  
 }
 
 :root {
@@ -17,7 +18,7 @@ body {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1400px;   
 }
 
 header {
@@ -51,32 +52,32 @@ aside {
     margin-top: 15px;
 }
 
-.tariff .page-views {
-    text-transform: uppercase;
-    flex: 1;
-    align-self: center;
+.tarrif .page-views {
+  text-transform: uppercase;
+  flex: 1;
+  align-self: center;
 }
 
-.tariff .price {
+.tarrif .price {
     flex: 2;
     display: flex;
     justify-content: flex-end;
     transition: all 0.5s;
 }
 
-.tariff .price span {
+.tarrif .price span {
     display: inline-block;
 }
 
-.tariff .price span:first-of-type,
-.tariff .price span:first-of-type span {
+.tarrif .price span:first-of-type,
+.tarrif .price span:first-of-type span {
     color: var(--main-color);
     font-size: 40px;
     line-height: 40px;
-    font-weight: 800;
+    font-weight: 800px;
 }
 
-.tariff .price span:last-of-type {
+.tarrif .price span:last-of-type {
     font-size: 15px;
     align-self: center;
     margin-left: 5px;
@@ -130,12 +131,12 @@ aside {
     border-radius: 5px;
 }
 
-.progress .monthly span,
+.progress .monthly span, 
 label {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
-.progress .switch {
+.progress .switch{
     position: relative;
     height: 20px;
     width: 40px;
@@ -197,7 +198,7 @@ hr {
     font-size: 15px;
 }
 
-@media (max-width: 600px) {
+@media(max-width: 600px) {
     .container {
         min-width: 375px;
     }
@@ -212,22 +213,27 @@ hr {
         margin-bottom: 50px;
     }
 
-    .tariff .price span:first-of-type,
-    .tariff .price span:first-of-type span {
-        color: var(--main-color);
-        font-size: 30px;
-        line-height: 30px;
+    .tarrif .price span {
+        display: inline-block;
     }
 
-    .start {
-        flex-direction: column;
-    }
+    .tarrif .price span:first-of-type,
+.tarrif .price span:first-of-type span {
+    color: var(--main-color);
+    font-size: 30px;
+    line-height: 30px;
+}
 
-    .start ul {
-        align-self: center;
-    }
+.start {
+    flex-direction: column;
+}
 
-    .start button {
-        margin-top: 30px;
-    }
+.start ul {
+    align-self: center;
+}
+
+.start button {
+    margin-top: 30px;
+}
+
 }
